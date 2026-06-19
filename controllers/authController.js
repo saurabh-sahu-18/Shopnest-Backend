@@ -70,7 +70,7 @@ const getUsers = async (req, res) => {
 };
 
 module.exports = {
-    resgisterUser,
+    registerUser,
     loginUser,
     getUsers
 }

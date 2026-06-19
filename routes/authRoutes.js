@@ -4,4 +4,6 @@ const { registerUser, loginUser, getUsers } = require("../controllers/authContro
 
 router.post("/register", registerUser);
 router.post("/login", loginUser);
-router.get("/users", protect, admin, getUsers);
+router.get("/users", getUsers);
+
+module.exports = router;
