@@ -87,8 +87,16 @@ const deleteProduct = async (req, res) => {
       .status(200)
       .json({ message: "Product Deleted Successfully", deletedProduct });
   } catch (err) {
-    res.status(500).json({ message: "Internal Server Error, deleteProduct Controller" });
+    res
+      .status(500)
+      .json({ message: "Internal Server Error, deleteProduct Controller" });
   }
 };
 
-module.exports = { getProducts, getProductById, createProduct, updateProduct, deleteProduct };
+module.exports = {
+  getProduct,
+  getProductById,
+  createProduct,
+  updateProduct,
+  deleteProduct,
+};
