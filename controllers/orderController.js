@@ -1,4 +1,4 @@
-const Order = require('../models/Order');
+const Order = require("../model/Order");
 const sendEmail = require('../utils/sendEmail');
 
 const addOrderItems = async (req, res) => {
